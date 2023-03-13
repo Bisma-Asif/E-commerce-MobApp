@@ -49,5 +49,20 @@ export default function ({ FontSize, Colors }) {
     textRight: {
       textAlign: 'right',
     },
+    CustomtitleSmall: {
+      fontSize: FontSize.small * 2,
+      fontWeight: 'bold',
+      color: Colors.white,
+    },
+    grntitleSmall: {
+      fontSize: FontSize.small * 2,
+      fontWeight: 'bold',
+      color: Colors.primary,
+    },
+    blutextRegular: {
+      fontSize: FontSize.regular,
+      color: Colors.blue,
+    },
+
   })
 }

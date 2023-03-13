@@ -1,11 +1,12 @@
 const Colors = {
-  primary: 'lightblue',
-  text: 'white',
-  inputBackground: 'gray',
+  primary: '#e17811',
+  text: '#ffffff',
+  inputBackground: '#b7b7b7',
 }
 
 const NavigationColors = {
   primary: Colors.primary,
+  background: '#000000',
 }
 
 export default {

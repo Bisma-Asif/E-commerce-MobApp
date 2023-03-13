@@ -21,7 +21,7 @@ const StartupContainer = () => {
     )
     await setDefaultTheme({ theme: 'default', darkMode: null })
     {
-      !user
+      user
         ? navigateAndSimpleReset('MainApp')
         : navigateAndSimpleReset('GetStarted')
     }
@@ -35,7 +35,7 @@ const StartupContainer = () => {
     <View style={[Layout.fill, Layout.colCenter]}>
       <Brand />
       <ActivityIndicator size={'large'} style={[Gutters.largeVMargin]} />
-      <Text style={Fonts.textCenter}>{t('welcome')}</Text>
+      {/* <Text style={Fonts.textCenter}>{t('welcome')}</Text> */}
     </View>
   )
 }

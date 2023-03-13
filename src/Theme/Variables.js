@@ -17,10 +17,12 @@ export const Colors = {
   primary: '#61B846',
   success: '#28a745',
   error: '#dc3545',
+  blue:"#024F9D"
 }
 
 export const NavigationColors = {
   primary: Colors.primary,
+  background: '#f7f7f7',
 }
 
 /**

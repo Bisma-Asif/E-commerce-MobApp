@@ -4,12 +4,21 @@ export default function ({ Colors, Gutters, Layout }) {
   const base = {
     ...Layout.center,
     ...Gutters.largeHPadding,
-    height: 40,
+    height: 60,
     backgroundColor: Colors.primary,
   }
   const rounded = {
     ...base,
     borderRadius: 20,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
   }
 
   return StyleSheet.create({

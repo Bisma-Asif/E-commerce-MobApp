@@ -1,10 +1,10 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { ExampleContainer } from '@/Containers'
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Entypo from 'react-native-vector-icons/Entypo';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import GetStarted from '@/Containers/AuthContainer/GetStarted';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import Entypo from 'react-native-vector-icons/Entypo'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import GetStarted from '@/Containers/AuthContainer/GetStarted'
 
 const Tab = createBottomTabNavigator()
 
@@ -19,41 +19,43 @@ const MainNavigator = () => {
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
-          // tabBarLabelPosition: 'beside-icon',
+          tabBarLabelStyle: { bottom: 3 },
         }}
       />
-       <Tab.Screen
-        name={"Message"}
+      <Tab.Screen
+        name={'Message'}
         component={GetStarted}
         options={{
-          tabBarLabel:"Message",
+          tabBarLabel: 'Message',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="chatbox-ellipses" color={color} size={size} />
           ),
+          tabBarLabelStyle: { bottom: 3 },
           //unmountOnBlur: true,
         }}
       />
-       <Tab.Screen
-        name={"Cart"}
+      <Tab.Screen
+        name={'Cart'}
         component={ExampleContainer}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Entypo name="shopping-cart" color={color} size={size} />
           ),
+          tabBarLabelStyle: { bottom: 3 },
           //unmountOnBlur: true,
         }}
       />
-       <Tab.Screen
-        name={"Account"}
+      <Tab.Screen
+        name={'Account'}
         component={ExampleContainer}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Entypo name="user" color={color} size={size} />
           ),
+          tabBarLabelStyle: { bottom: 3 },
           //unmountOnBlur: true,
         }}
       />
-   
     </Tab.Navigator>
   )
 }
